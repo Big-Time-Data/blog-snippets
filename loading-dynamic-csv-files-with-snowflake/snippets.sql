@@ -62,7 +62,7 @@ with headers as (
   where source.file_row_number > 1
   group by 1, 2, 3, 4
 )
-select * from record;
+select * from records;
 
 
 select
