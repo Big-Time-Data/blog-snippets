@@ -60,7 +60,7 @@ with headers as (
   inner join headers
     on headers.filename = source.filename
   where source.file_row_number > 1
-  group by 1, 2, 3, 4
+  group by 1, 2, 3
 )
 select * from records;
 
